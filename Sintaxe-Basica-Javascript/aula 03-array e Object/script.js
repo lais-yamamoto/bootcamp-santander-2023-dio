@@ -10,8 +10,8 @@ console.log(array);*/
 
 //como acessar um valor dentro do array
 //OBS: Se o let array não estiver visível, estiver como comentário, não é possível manipular os arrays. 
-let array = ['string', 1, true, ['array1'], ['array2'], ['array3'], ['array4']];
-console.log(array[3]);
+/*let array = ['string', 1, true, ['array1'], ['array2'], ['array3'], ['array4']];
+console.log(array[3]);*/
 
 //manipulando arrays
 //forEach - função, por isso os ()
@@ -43,6 +43,20 @@ console.log(array);*/
 //slice - retorna a parte de um array existente
 /*let novoArray = array.slice(0, 3);
 console.log(novoArray);*/
+
+// OBJETOS
+let object = {string: 'string', numer: 1, Boolean: true, array: ['array'], objectInterno: {objectInterno: 'objeto interno'}};
+console.log(object.objectInterno);
+
+//desustruturação do objeto
+var string = object.String; 
+console.log(string);
+
+var arrayInterno = object.array;
+console.log(arrayInterno);
+
+var {string, Boolean, objectInterno} = object;
+console.log(string, Boolean, objectInterno);
 
 
 
